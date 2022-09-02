@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Choice quiz</title>
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+    </link>
+</head>
+
+<body>
+    <a href="highscores.html" id="highscores">View Highscores</a>
+
+    <!-- Div for timer -->
+    <div id="current time"></div>
+    <!-- div for Welcome -->
+    <div class="wrapper">
+        <section id="welcomescreen">
+            <h1>Welcome to the Multiple Choice quiz.</h1>
+            <p>
+                Try to answer the following questions within the time limit.
+                There is a penalty of 10seconds if you answer a question wrong.
+            </p>
+            <button id="startbutton"></button>
+        </section>
+
+        <!-- div for quiz -->
+        <section id="questions" class="hide">
+            <h2 id="questions-title"></h2>
+
+            <div id="choices"></div>
+
+        </section>
+
+        <section id="finalscreen" class="hide">
+            <h2>Congratulations, Quiz Finished!</h2>
+            <p>your final score was: <span id"final-score"></span>.</p>
+            <p> 
+                Enter Initials: <input type="text" id="initials" max="3">
+
+
+        </section>
+    </div>
+
+    <script src="./assets/index.js"></script>
+
+</body>
+
+</html>
