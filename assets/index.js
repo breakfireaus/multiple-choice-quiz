@@ -68,7 +68,7 @@ function questionClick() {
     //check user choice(if it is wrong)
     if (this.value !== questions[currentQuestionIndex].answer) {
         // penalize time
-        time -= 15;
+        time -= 10;
 
         if (time < 0) {
             time = 0;
@@ -113,6 +113,16 @@ function quizend() {
     questionsEl.setAttribute("class", "hide");
 }
 
+function timeEnd() {
+    // show end screen
+    var endScreenEl = document.getElementById("finalscreen");
+    endScreenEl.removeAttribute("class");
+    // show final score
+    var finalScoreEl = document.getElementById("final-score");
+    // hide questions section
+    questionsEl.setAttribute("class", "hide");
+ }
+
 function clockTick() {
     //update time
     var timeinterval = setInterval(function(){
@@ -121,8 +131,8 @@ function clockTick() {
     
         //check if user ran out of time
         if (time <= 0) {
-            quizend();
-            clearInterval(timeinterval)
+            timeEnd();
+            clearInterval(timeinterval);
         }
     }, 1000)
    
