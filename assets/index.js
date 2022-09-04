@@ -76,15 +76,16 @@ function questionClick() {
 
         //display new time on page
         timerEl.textContent = time;
-        feedbackEl.textContent - "Wrong";
+        feedbackEl.textContent = "Wrong";
         feedbackEl.style.color =  "red";
         feedbackEl.style.fontsize = "400%";
+        feedbackEl.setAttribute("class" , "feedback");
+        setTimeout(function() {
+            feedbackEl.setAttribute("class", "feedback hide");
+        }, 1000);
     }
     
-    feedbackEl.setAttribute("class" , "feedback");
-    setTimeout(function() {
-        feedbackEl.setAttribute("class", "feedback hide");
-    }, 1500);
+   
 
     // next question
     currentQuestionIndex++;
