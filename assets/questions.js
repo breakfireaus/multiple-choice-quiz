@@ -44,7 +44,7 @@ var questions = [
             '"And" Operator &&',
             '"or" Operator ||',
             '"Not" Operator !',
-            '"All of the above',
+            'All of the above',
         ],
         answer: 'All of the above'
                             },
@@ -52,7 +52,7 @@ var questions = [
         {
         title: 'What of the following are not three different types of errors in Javascript?',
         choices:[
-            'animation time errors',
+            'Animation time errors',
             'load time errors',
             'Run time errors',
             'logical errors',
@@ -76,7 +76,7 @@ var questions = [
         {
         title: 'Fill in the blank: The condition in a if/else statement is enclosed within_____. ',
         choices:[
-                'qoutes',
+                'quotes',
                 'curly brackets',
                 'commas',
                 'parentheses'
@@ -87,12 +87,12 @@ var questions = [
         {
             title: 'Fill in the blank: String values must be enclosed within ______ when being assigned to variables. ',
             choices:[
-                'qoutes',
+                'quotes',
                 'curly brackets',
                 'commas',
                 'parentheses'
             ]
-            ,answer: 'qoutes'
+            ,answer: 'quotes'
             },
         {
             title: 'A useful tool that is good to use for debugging and development for content printing is?',
@@ -112,6 +112,6 @@ var questions = [
                 'Prompt',
                 'All of the above',
                 ]
-            ,answer: 'console.log',
+            ,answer: 'All of the above',
                 },
 ]
