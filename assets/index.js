@@ -33,7 +33,7 @@ function startQuiz() {
     //start timer
 
     timerEl.textContent = time;
-
+    clockTick();
     getQuestion();
 }
 
@@ -115,13 +115,17 @@ function quizend() {
 
 function clockTick() {
     //update time
-    time--;
-    timerEl.textContent = time;
-
-    //check if user ran out of time
-    if (time <= 0) {
-        quizend();
-    }
+    var timeinterval = setInterval(function(){
+        time--;
+        timerEl.textContent = time;
+    
+        //check if user ran out of time
+        if (time <= 0) {
+            quizend();
+            clearInterval(timeinterval)
+        }
+    }, 1000)
+   
 }
 
 function saveHighscore() {
