@@ -9,7 +9,7 @@
 
 var questionsEl = document.querySelector("#questions");
 var timerEl = document.querySelector("#time");
-var choicesel = document.querySelector("#choices");
+var choicesE1 = document.querySelector("#choices");
 var submitBtn = document.querySelector("#submit");
 var startBtn = document.querySelector("#startbutton");
 var initialsEl = document.querySelector("#initials")
@@ -46,25 +46,25 @@ function getQuestion(){
     titleE1.textContent = currentQuestion.title;
 
     //clear out any old question choices
-    choicesel.innerHTML = "";
+    choicesE1.innerHTML = "";
     //loop over choices
     currentQuestion.choices.forEach(function(choice, i){
         // create new button for each choice 
-        var choiceNode = document.createAttribute("button");
+        var choiceNode = document.createElement("button");
         choiceNode.setAttribute("class", "choice")
         choiceNode.setAttribute("value", choice)
 
         choiceNode.textContent = i + 1 + ". " + choice;
 
         //attach click event listener to each choice
-        choiceNode.onclick = questionClick;
+        choiceNode.addEventListener("click", questionClick);
         
         // display on the page
         choicesE1.appendChild(choiceNode);
     });
 }
 
-function qustionClick() {
+function questionClick() {
     //check user choice(if it is wrong)
     if (this.value !== questions[currentQuestionIndex].answer) {
         // penalize time
@@ -106,7 +106,7 @@ function quizend() {
     endScreenEl.removeAttribute("class");
 
     // show final score
-    var finalScoreEl = documnt.getElementById("final-score");
+    var finalScoreEl = document.getElementById("final-score");
     finalScoreEl.textContent = time;
 
     // hide questions section
