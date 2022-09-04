@@ -136,7 +136,7 @@ function clockTick() {
 
 function saveHighscore() {
     // get value of input box
-    var initials = initialsel.value.trim();
+    var initials = initialsEl.value.trim();
 
     if (initials !== "") {
         // get saved scores from localstorage, or if not any, set empty array
@@ -154,7 +154,7 @@ function saveHighscore() {
         window.localStorage.setItem("highscores", JSON.stringify(highscores));
 
         // redirect to next page
-        window.location.href = "score.html";
+        window.location.href = "highscores.html";
     }
 }
 
