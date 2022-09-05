@@ -11,6 +11,10 @@
     display: none;
 }
 
+h2{
+    color: #2f6627;
+}
+
 .start{
     text-align: center;
 }
@@ -21,6 +25,19 @@
     left: 10px;
 }
 
+.clear1{
+    padding: 5px;
+    margin: 20px;
+    color: white;
+    background:#44c767;
+    text-shadow: 1px 1px 0px #2f6627;
+    border-top-left-radius:28px;
+    border-top-right-radius:28px;
+    border-bottom-left-radius:28px;
+    border-bottom-right-radius:28px;
+    border-color:#18ab29;
+    font-style: italic;
+}
 
 .feedback{
     font-style: italic;
@@ -83,6 +100,7 @@ a:hover {
     border-bottom-right-radius:28px;
     border-color:#18ab29;
     font-style: italic;
+}
 
 
 input[type="text"] {
@@ -98,6 +116,8 @@ ol {
 li {
     padding: 5px;
     list-style: decimal inside none;
+    color: #2f6627;
+    font-weight: bold;
 }
 
 li:nth-child(odd){

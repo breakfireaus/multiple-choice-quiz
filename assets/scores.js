@@ -9,7 +9,7 @@ function printHighscores() {
     highscores.forEach(function(score) {
         // create li tag each high score
         var litag = document.createElement("li");
-        litag.textContent = score.initals + " - " + score.score;
+        litag.textContent = score.initials + " - " + score.score;
         
         
         //dispay on page
