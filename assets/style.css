@@ -58,10 +58,12 @@ a {
     color: black;
     text-decoration: none;
     transition: color 0.1s;
+    padding: 5px;
 }
 
-a:hover {
+#highscores:hover {
     background: #5cbf2a;
+    padding: 5px;
 }
 
 
@@ -119,6 +121,8 @@ li {
     color: #2f6627;
     font-weight: bold;
 }
+
+
 
 li:nth-child(odd){
     background-color: #dfdae7;
