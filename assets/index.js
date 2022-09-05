@@ -96,6 +96,7 @@ function questionClick() {
 function quizend() {
     // stop timer
     clearInterval(timerId);
+    timerEl.setAttribute("class", "hide");
 
     // show end screen
     var endScreenEl = document.getElementById("finalscreen");
