@@ -14,6 +14,7 @@ function printHighscores() {
         
         //dispay on page
         var o1e1 = document.getElementById("highscores")
+        o1e1.appendChild(litag);
     });
 }
 
