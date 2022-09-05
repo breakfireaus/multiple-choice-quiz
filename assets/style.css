@@ -68,6 +68,7 @@ a {
 
 
 
+
 #startbutton {
     font-size:15px;
     font-family:Arial;
@@ -88,6 +89,11 @@ a {
 #startbutton:hover {
     background: #5cbf2a
   }
+#time{
+    padding: 10px;
+    padding-left: 0px;
+
+}
 
 .choices button {
     display:block;

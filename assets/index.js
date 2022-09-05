@@ -74,12 +74,15 @@ function questionClick() {
         feedbackEl.textContent = "Wrong";
         feedbackEl.style.color =  "red";
         feedbackEl.style.fontsize = "400%";
-        feedbackEl.setAttribute("class" , "feedback");
+    } else 
+    {feedbackEl.textContent = "Correct";
+    feedbackEl.style.color =  "Green";
+    feedbackEl.style.fontsize = "400%";}
+
+    feedbackEl.setAttribute("class" , "feedback");
         setTimeout(function() {
             feedbackEl.setAttribute("class", "feedback hide");
-        }, 1000);
-    }
-    
+        }, 500);
    
 
     // next question
