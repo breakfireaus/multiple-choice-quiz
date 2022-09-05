@@ -71,8 +71,19 @@ a:hover {
   }
 
 .choices button {
-    display:block
-}
+    display:block;
+    padding: 5px;
+    margin: 20px;
+    color: white;
+    background:#44c767;
+    text-shadow: 1px 1px 0px #2f6627;
+    border-top-left-radius:28px;
+    border-top-right-radius:28px;
+    border-bottom-left-radius:28px;
+    border-bottom-right-radius:28px;
+    border-color:#18ab29;
+    font-style: italic;
+
 
 input[type="text"] {
     font-size: 100%;
